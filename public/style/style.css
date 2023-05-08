@@ -138,14 +138,14 @@ body{
   .soc-links{
     width: 100%;
   }
-  .soc-links a{
+  .soc-links a, .phone-links a{
     display: inline-block;
     margin-left: 5px;
     text-decoration: none;
     font-weight: 400;
     color: black;
   }
-  .soc-links i{
+  .soc-links i, .phone-links a{
     margin-right: 2px;
   }
   .soc-links .fa-whatsapp{
@@ -160,3 +160,7 @@ body{
   .soc-links .fa-twitter{
     color: blue;
   }
+.phone-links .fa-phone{
+  color: black;
+  margin-right: 5px;
+}
