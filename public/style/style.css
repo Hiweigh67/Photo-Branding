@@ -1,0 +1,162 @@
+body{
+    width: 1024px;
+    min-height: 600px;
+    height: 100%;
+    background: rgb(114, 114, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main container */
+.main-container{
+    background: white;
+    padding: 20px;
+}
+
+/* Welcome section starts here */
+.welcome{
+    text-align: center;
+}
+.welcome h2{
+    padding-top: 20px;
+}
+
+/* Other Parts */
+.other{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+  
+  #image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  #overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.548), white);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  #overlay p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.712);
+  }
+
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .overlay h2{
+    margin-bottom: 5px;
+  }
+  .over1 a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(rgb(240, 240, 108), rgb(47, 47, 233));
+    width: 100px;
+    margin: 4px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #waterMark{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    color: rgba(216, 216, 187, 0.445);
+    min-width: 500%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #waterMark h1{
+    display: inline-block;
+    padding: 20px;
+  }
+  #waterMark img{
+    height: 40px;
+    width: 40px;
+    opacity: .2;
+  }
+
+  /* controls */
+  .control{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .control input{
+    display: block;
+    padding-left: 5px;
+    margin: 10px auto;
+  }
+  .control button{
+    background: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  /* fl */
+  .fl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .soc-links{
+    width: 100%;
+  }
+  .soc-links a{
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+  }
+  .soc-links i{
+    margin-right: 2px;
+  }
+  .soc-links .fa-whatsapp{
+    color: green;
+  }
+  .soc-links .fa-telegram{
+    color: blue;
+  }
+  .soc-links .fa-linkedin{
+    color: blue;
+  }
+  .soc-links .fa-twitter{
+    color: blue;
+  }
