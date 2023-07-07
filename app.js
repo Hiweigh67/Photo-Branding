@@ -25,7 +25,7 @@ function executeTaskEvery10Minutes() {
   setInterval(function() {
 
 fetch("https://newlugandahymnal.onrender.com/keepAlive")
-  .then(response => response.json())
+  .then(response => console.log(response))
   .then(responseData => {
     // Process the response data
     console.log(responseData);
@@ -33,6 +33,7 @@ fetch("https://newlugandahymnal.onrender.com/keepAlive")
   .catch(error => {
     // Handle any errors
     console.error('Error:', error);
+    return executeTaskEvery10Minutes();
   });
     return executeTaskEvery10Minutes();
     // Add your task logic here
