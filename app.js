@@ -1,9 +1,10 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+const fetch = require('node-fetch')
+// const { default: fetch } = require('node-fetch');
 
 const app = express();
-
 app.use(cors({
   origin:"https://newlugandahymnal.onrender.com",
   methods:"*",
@@ -15,23 +16,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (res, req)=>{
     req.send('hello')
 })
-
 function executeTaskEvery10Minutes() {
   // Task to execute
   console.log("Executing task...");
+  // const fetch = require('node-fetch');
 
   // Repeat the task every 10 minutes (600,000 milliseconds)
   setInterval(function() {
-    console.log("Task Executed at "+ Date.now());
-    const data = { key1: 'value1', key2: 'value2' };
 
-fetch("https://newlugandahymnal.onrender.com/keepAlive", {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify(data)
-})
+fetch("https://newlugandahymnal.onrender.com/keepAlive")
   .then(response => response.json())
   .then(responseData => {
     // Process the response data
