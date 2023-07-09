@@ -22,7 +22,7 @@ function executeTaskEvery10Minutes() {
   console.log("Executing task...");
 
   function performFetch() {
-    fetch("https://hiweightechsystemsltd.onrender.com/keepAlive")
+    fetch("https://newlugandahymnal.onrender.com/keepAlive")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -31,7 +31,7 @@ function executeTaskEvery10Minutes() {
       })
       .then(responseData => {
         // Process the response data
-        console.log(responseData);
+        console.log("response is clear");
       })
       .catch(error => {
         // Handle any errors gracefully
