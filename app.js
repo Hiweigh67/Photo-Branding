@@ -28,7 +28,7 @@ fetch("https://newlugandahymnal.onrender.com/keepAlive")
   .then(response => console.log(response))
   .then(responseData => {
     // Process the response data
-    console.log(responseData);
+    console.log(responseData+" ");
   })
   .catch(error => {
     // Handle any errors
